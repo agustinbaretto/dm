@@ -1,0 +1,8 @@
+{
+  "require": {
+    "monolog/monolog": "1.2.*",
+    "google/apiclient": "1.0.*@beta",
+    "nlp-tools/nlp-tools": "1.0.*@dev",
+    "facebook/php-sdk-v4" : "4.0.*"
+  }
+}
