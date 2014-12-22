@@ -356,8 +356,8 @@ $config['rewrite_short_tags'] = FALSE;
 |
 */
 $config['proxy_ips'] = '';
-$config['facebook']['api_id'] = '755910007779705';
-$config['facebook']['app_secret'] = '2f9c0eb2620af786e62926c3e4249ae6';
+$config['facebook']['api_id'] = '163110543856721';
+$config['facebook']['app_secret'] = 'b62e18454dea10acc6f70175ad6e6414';
 $config['facebook']['redirect_url'] = 'http://gustame.com/dm/index.php/main/';
 $config['facebook']['permissions'] = array('email',
 		'user_friends',
