@@ -23,7 +23,7 @@ class Matcher extends CI_Controller
 	public function friends()
 	{
 		//$entityTypeFacebook = $this->config->item('facebook_field', $entityType);
-		$friends = $this->facebook->get_friends_data('es');
+		$friends = $this->facebook->get_friends_data('es_LA');
 		foreach ($friends as $key => $friend){
 			//if((!isset($friend->books))&&(!isset($friend->movies))){
    		if(!isset($friend->books)){
@@ -61,7 +61,6 @@ class Matcher extends CI_Controller
 		$preferences = $this->colaborative("books");
 		$re = new Recommend();
 		$recs = $re->matchItems($re->transformPreferences($preferences), $book);
-		vd::dump($recs);die;
 		$data = array("recs"=>$recs, "ownerId"=>$userId);
 		$this->load->view('templates/header');
 		$this->load->view('pages/recs', $data);
@@ -117,7 +116,7 @@ class Matcher extends CI_Controller
     				$freebaseName = null;
     				$freebaseMid = null;
     				$candidate = $this->reconcile($name, $entityTypeFreebase, "es");
-    				if($candidate){
+    				if($candidate && $candidate->confidence > 0.000007){
     					$freebaseMid = $candidate->mid;
     					if (array_key_exists($candidate->mid, $titles)) {
 								$freebaseName = $titles[$candidate->mid];
@@ -127,7 +126,7 @@ class Matcher extends CI_Controller
 							}
    					}else{
     					$candidate = $this->reconcile($name, $entityTypeFreebase, "en");
-    					if($candidate){
+    					if($candidate && $candidate->confidence > 0.000000007){
     						$freebaseMid = $candidate->mid;
     						if (array_key_exists($candidate->mid, $titles)) {
 									$freebaseName = $titles[$candidate->mid];
@@ -141,7 +140,7 @@ class Matcher extends CI_Controller
 	   							if($pos){
 		   							$name = substr($name, 0, $pos);
 		    						$candidate = $this->reconcile($name, $entityTypeFreebase, "es");
-		    						if($candidate){
+		    						if($candidate && $candidate->confidence > 0.000000007){
 		    							$freebaseMid = $candidate->mid;
 		    							if (array_key_exists($candidate->mid, $titles)) {
 												$freebaseName = $titles[$candidate->mid];
@@ -151,7 +150,7 @@ class Matcher extends CI_Controller
 											}
 		    						}else{
 					    				$candidate = $this->reconcile($name, $entityTypeFreebase, "en");
-				    					if($candidate){
+				    					if($candidate && $candidate->confidence > 0.000000007){
 				    						$freebaseMid = $candidate->mid;
 				    						if (array_key_exists($candidate->mid, $titles)) {
 													$freebaseName = $titles[$candidate->mid];
@@ -181,7 +180,7 @@ class Matcher extends CI_Controller
     						}
     						//store relationship
    							//array_push($fan_ent, array("from"=>$friend->id, "to"=>$entityList[$freebaseName]["mid"]));
-   							$preferences[$friend->id][$freebaseName] = (strpos($entityList[$freebaseName]["mid"], "m"))?5.0:4.0;
+   							$preferences[$friend->id][$freebaseName] = (strpos($entityList[$freebaseName]["mid"], "m"))?5.0:1.0;
     					}
     				}else{
     					//create entity
@@ -193,7 +192,7 @@ class Matcher extends CI_Controller
     					//store relationship
     					//array_push($nodes, array("id"=>$freebaseMid, "label"=>$freebaseName, "group"=>$entityType));
     					//array_push($fan_ent, array("from"=>$friend->id, "to"=>$freebaseMid));
-    					$preferences[$friend->id][$freebaseName] = (strpos($entityList[$freebaseName]["mid"], "m"))?5.0:4.0;
+    					$preferences[$friend->id][$freebaseName] = (strpos($entityList[$freebaseName]["mid"], "m"))?5.0:1.0;
     				}
     			}
     		}

@@ -2,7 +2,7 @@
 $config['books']['facebook_field'] = 'books';
 $config['books']['lang'] = 'es_LA';
 $config['books']['facebook_properties'] = 'name';
-$config['books']['freebase_type'] = '/book/written_work';
+$config['books']['freebase_type'] = '/book/book';
 $config['books']['freebase_properties'] = 'name';
 $config['books']['strip_dictionary'] = array('libro','book','(serie)','página oficial','pagina oficial','oficial','official',' - ');
 

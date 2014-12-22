@@ -36,7 +36,35 @@ class Recommend {
 
 		return  1/(1 + sqrt($sum));
 	}
-
+	
+	public function jaccardDistance($preferences, $person1, $person2)
+	{
+		$both = 0;
+		$p1 = 0;
+		$p2 = 0;
+		$sum = 0;
+	
+		foreach($preferences[$person1] as $key=>$value)
+		{
+			if(array_key_exists($key, $preferences[$person2])){
+				$both++;
+			}else{
+				$p1++;
+			}
+		}
+	
+		if($both == 0)
+			return 0;
+	
+		foreach($preferences[$person2] as $key=>$value)
+		{
+			if(!array_key_exists($key, $preferences[$person1])){
+				$p2++;
+			}
+		}
+	
+		return  ($p1+$p2)/($p1+$p2+$both);
+	}
 
 	public function matchItems($preferences, $person)
 	{
@@ -46,7 +74,7 @@ class Recommend {
 		{
 			if($otherPerson !== $person)
 			{
-				$sim = $this->similarityDistance($preferences, $person, $otherPerson);
+				$sim = $this->jaccardDistance($preferences, $person, $otherPerson);
 
 				if($sim > 0)
 					$score[$otherPerson] = $sim;
@@ -86,9 +114,9 @@ class Recommend {
 		{
 			if($otherPerson != $person)
 			{
-				$sim = $this->similarityDistance($preferences, $person, $otherPerson);
+				$sim = $this->jaccardDistance($preferences, $person, $otherPerson);
 			}
-
+			
 			if($sim > 0)
 			{
 				foreach($preferences[$otherPerson] as $key=>$value)
@@ -109,13 +137,16 @@ class Recommend {
 
 			}
 		}
-
+		array_multisort($total, SORT_DESC);
+		return $total;
+		
 		foreach($total as $key=>$value)
 		{
 			$ranks[$key] = $value / $simSums[$key];
 		}
-
+		
 		array_multisort($ranks, SORT_DESC);
+		vd::dump($ranks);die;
 		return $ranks;
 
 	}
