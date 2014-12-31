@@ -32,8 +32,10 @@ class Facebook {
     // e.g. $helper = new FacebookRedirectLoginHelper( 'http://mydomain.com/redirect' );
     $this->helper = new FacebookRedirectLoginHelper(site_url('matcher/friends'));
 
-    if ( $this->ci->session->userdata('fb_token') ) {
-      $this->session = new FacebookSession( $this->ci->session->userdata('fb_token') );
+    //if ( $this->ci->session->userdata('fb_token') ) {
+    if (isset($_SESSION['fb_token'])) {
+    	//$this->session = new FacebookSession( $this->ci->session->userdata('fb_token') );
+      $this->session = new FacebookSession( $_SESSION['fb_token'] );
 
       // Validate the access_token to make sure it's still valid
       try {
@@ -56,7 +58,7 @@ class Facebook {
     }
  
     if ( $this->session ) {
-      $this->ci->session->set_userdata( 'fb_token', $this->session->getToken() );
+      $_SESSION['fb_token'] = $this->session->getToken();
  
       $this->session = new FacebookSession( $this->session->getToken() );
     }
