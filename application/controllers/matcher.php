@@ -10,8 +10,7 @@ class Matcher extends CI_Controller
 		$this->load->driver('cache');
 		
 		if(!$this->facebook->session){
-			echo 1;
-			//redirect('/main');
+			redirect('/main');
 		}else{
 			$this->owner = $this->facebook->get_user();
 		}
