@@ -19,6 +19,13 @@ class Main extends CI_Controller {
   	redirect('/main');
 	}
 	
+	public function test()
+	{
+		$this->load->driver('cache');
+		$this->cache->memcached->save("hola", "hola", 0);
+		echo $this->cache->memcached->get("hola");
+	}
+	
 	public function contact()
 	{
 		$this->load->view('templates/header');
