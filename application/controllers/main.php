@@ -22,8 +22,9 @@ class Main extends CI_Controller {
 	public function test()
 	{
 		$this->load->driver('cache');
-		$this->cache->memcached->save("hola", "hola", 0);
-		echo $this->cache->memcached->get("hola");
+		//session_start();
+		$_SESSION["hola"] = "chau";
+		echo $_SESSION["hola"];
 	}
 	
 	public function contact()
