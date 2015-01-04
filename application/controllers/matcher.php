@@ -75,7 +75,7 @@ class Matcher extends CI_Controller
    	$lang = $this->config->item('lang', $entityType);
    	$words = $this->config->item('strip_dictionary', $entityType);
 
-   	if ( $this->session ) {
+   	if ( $_SESSION ) {
    		$titles = array();
    		$preferences = array();
    		$entityList = array();
@@ -213,7 +213,7 @@ class Matcher extends CI_Controller
 		$words = $this->config->item('strip_dictionary', $entityType);
 		$lang = $this->config->item('lang', $entityType);
 	
-		if ( $this->session ) {
+		if ( $_SESSION ) {
 			$titles = array();
 			$entityList = array();
 			$nodes = array();

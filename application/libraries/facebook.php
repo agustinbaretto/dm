@@ -1,5 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
- 
+
+//$dir = sys_get_temp_dir();
+//session_save_path($dir);
+
 if ( session_status() == PHP_SESSION_NONE ) {
   session_start();
 }
@@ -43,7 +46,7 @@ class Facebook {
           $this->session = null;
         }
       } catch ( Exception $e ) {
-        // Catch any exceptions
+        // Catch any exception
         $this->session = null;
       }
     } else {
@@ -59,7 +62,6 @@ class Facebook {
  
     if ( $this->session ) {
       $_SESSION['fb_token'] = $this->session->getToken();
- 
       $this->session = new FacebookSession( $this->session->getToken() );
     }
   }

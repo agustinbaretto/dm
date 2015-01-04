@@ -23,7 +23,7 @@ class Main extends CI_Controller {
 	{
 		//$this->load->driver('cache');
 		//session_start();
-		//$_SESSION["hola"] = "chau";
+		$_SESSION["hola"] = "chau";
 		echo $_SESSION["hola"];
 	}
 	
