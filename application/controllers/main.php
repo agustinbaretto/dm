@@ -27,6 +27,13 @@ class Main extends CI_Controller {
 		echo $_SESSION["hola"];
 	}
 	
+	public function about()
+	{
+		$this->load->view('templates/header');
+		$this->load->view('pages/about');
+		$this->load->view('templates/footer');
+	}
+	
 	public function contact()
 	{
 		$this->load->view('templates/header');
