@@ -54,6 +54,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="<?php echo site_url('matcher/friends') ?>">Friends</a></li>
             <li><a href="<?php echo site_url('matcher/graph/books') ?>">Graph</a></li>
+            <li><a href="<?php echo site_url('main/about') ?>">About</a></li>
             <li><a href="<?php echo site_url('main/contact') ?>">Contact</a></li>
             <li><a href="<?php echo site_url('main/logout') ?>">Logout</a></li>
           </ul>
