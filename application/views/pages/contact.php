@@ -10,7 +10,7 @@
 		</div>
 		<div class="row mt">	
 			<div class="col-lg-8 col-lg-offset-2">
-				<form role="form">
+				<form role="form" method="post" accept-charset="utf-8" action="<?= site_url('main/submit_contact') ?>">
 				  <div class="form-group">
 				    <input type="name" class="form-control" id="NameInputEmail1" name="name" placeholder="Your Name">
 				    <br>
