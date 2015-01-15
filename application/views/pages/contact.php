@@ -12,18 +12,18 @@
 			<div class="col-lg-8 col-lg-offset-2">
 				<form role="form">
 				  <div class="form-group">
-				    <input type="name" class="form-control" id="NameInputEmail1" placeholder="Your Name">
+				    <input type="name" class="form-control" id="NameInputEmail1" name="name" placeholder="Your Name">
 				    <br>
 				  </div>
 				  <div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+				    <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter email">
 				    <br>
 				  </div>
 				  <div class="form-group">
-				    <input type="email" class="form-control" id="subjectEmail1" placeholder="Subject">
+				    <input type="email" class="form-control" id="subjectEmail1" name="subject" placeholder="Subject">
 				    <br>
 				  </div>
-				  <textarea class="form-control" rows="6" placeholder="Enter your text here"></textarea>
+				  <textarea class="form-control" rows="6" name="content" placeholder="Enter your text here"></textarea>
 				    <br>
 				  <button type="submit" class="btn btn-success">SUBMIT</button>
 				</form>    			

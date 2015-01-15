@@ -46,10 +46,10 @@ class Main extends CI_Controller {
 		$this->load->database();
 		
 		$data = array(
-				'name' => 'My name' ,
-				'email' => 'My email' ,
-				'subject' => 'My subject',
-				'content' => 'My content'
+				'name' => $this->input->post('name', TRUE),
+				'email' => $this->input->post('email', TRUE),
+				'subject' => $this->input->post('subject', TRUE),
+				'content' => $this->input->post('content', TRUE)
 		);
 		
 		$this->db->insert('contact', $data);
