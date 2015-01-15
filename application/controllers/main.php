@@ -52,7 +52,7 @@ class Main extends CI_Controller {
 				'content' => 'My content'
 		);
 		
-		$this->db->insert('contact', $data);
+		$this->db->insert('contact_form', $data);
 	}
 }
 
