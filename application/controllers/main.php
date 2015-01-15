@@ -44,11 +44,10 @@ class Main extends CI_Controller {
 	public function submit_contact()
 	{
 		$this->load->database();
-		
+		vd::dump($this->input->post());
 		$data = array(
 				'name' => $this->input->post('name', TRUE),
 				'email' => $this->input->post('email', TRUE),
-				'subject' => $this->input->post('subject', TRUE),
 				'content' => $this->input->post('content', TRUE)
 		);
 		

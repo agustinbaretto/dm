@@ -19,10 +19,6 @@
 				    <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter email">
 				    <br>
 				  </div>
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="subjectEmail1" name="subject" placeholder="Subject">
-				    <br>
-				  </div>
 				  <textarea class="form-control" rows="6" name="content" placeholder="Enter your text here"></textarea>
 				    <br>
 				  <button type="submit" class="btn btn-success">SUBMIT</button>
