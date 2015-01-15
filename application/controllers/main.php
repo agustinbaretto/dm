@@ -40,6 +40,20 @@ class Main extends CI_Controller {
 		$this->load->view('pages/contact');
 		$this->load->view('templates/footer');
 	}
+	
+	public function submit_contact()
+	{
+		$this->load->database();
+		
+		$data = array(
+				'name' => 'My name' ,
+				'email' => 'My email' ,
+				'subject' => 'My subject',
+				'content' => 'My content'
+		);
+		
+		$this->db->insert('contact', $data);
+	}
 }
 
 /* End of file main.php */

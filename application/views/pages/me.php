@@ -3,8 +3,9 @@
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 centered">
 					<img src="assets/img/user.png" alt="Stanley">
-					<h1>About Gustame</h1>
-					<p>Gustame is a </p>
+					<h1>About me</h1>
+					<p>My name is Agustin Baretto, I am a Computer Science Engineer and I am interested in Social Networks, Mobile Technologies and the Semantic Web. I have worked for many years in the Software Development Industry as a Developer, Business Analyst and Project Manager.</p>
+					<p>I am currently doing an MS in Technical Entrepreneurship and Management at <a href="http://www.rochester.edu">University of Rochester</a> and I am part of both Human Computer Interaction and Data Mining Research Teams.</p>
 					
 				</div><!-- /col-lg-8 -->
 			</div><!-- /row -->
