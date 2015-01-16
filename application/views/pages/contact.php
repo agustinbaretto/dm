@@ -1,6 +1,6 @@
 	<!-- +++++ Contact Section +++++ -->
 	
-	<div class="container pt">
+	<div class="container">
 		<div class="row mt">
 			<div class="col-lg-6 col-lg-offset-3 centered">
 				<h3>CONTACT ME</h3>
