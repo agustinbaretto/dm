@@ -43,15 +43,25 @@ class Main extends CI_Controller {
 	
 	public function submit_contact()
 	{
-		$this->load->database();
-		vd::dump($this->input->post());
-		$data = array(
-				'name' => $this->input->post('name', TRUE),
-				'email' => $this->input->post('email', TRUE),
-				'content' => $this->input->post('content', TRUE)
-		);
-		
-		$this->db->insert('contact_form', $data);
+		if(!($this->input->post('name')||$this->input->post('email')||$this->input->post('content'))){
+			$this->load->view('templates/header');
+			$this->load->view('pages/contact');
+			$this->load->view('templates/footer');
+		}else{
+			
+			$this->load->database();
+			
+			$data = array(
+					'name' => $this->input->post('name', TRUE),
+					'email' => $this->input->post('email', TRUE),
+					'content' => $this->input->post('content', TRUE)
+			);
+			
+			$this->db->insert('contact_form', $data);
+			$this->load->view('templates/header');
+			$this->load->view('pages/contactSuccess');
+			$this->load->view('templates/footer');
+		}
 	}
 }
 
