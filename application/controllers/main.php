@@ -43,7 +43,7 @@ class Main extends CI_Controller {
 	
 	public function submit_contact()
 	{
-		if(!($this->input->post('name')||$this->input->post('email')||$this->input->post('content'))){
+		if(!($this->input->post('name')&&$this->input->post('email')&&$this->input->post('content'))){
 			$this->load->view('templates/header');
 			$this->load->view('pages/contact');
 			$this->load->view('templates/footer');
