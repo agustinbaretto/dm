@@ -45,6 +45,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+         	 	<li><a href="<?php echo site_url('main/how') ?>">How does it work?</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

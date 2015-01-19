@@ -19,12 +19,20 @@ class Main extends CI_Controller {
   	redirect('/main');
 	}
 	
-	public function test()
+	public function how()
 	{
-		//$this->load->driver('cache');
-		//session_start();
-		$_SESSION["hola"] = "chau";
-		echo $_SESSION["hola"];
+		$this->load->view('templates/headerLanding');
+		$this->load->view('pages/about');
+		$this->load->view('templates/footer');
+	}
+	
+	public function download()
+	{
+		$this->load->helper('download');
+		$data = file_get_contents(base_url()."assets/img/gustame.pdf");
+		$name = 'gustame.pdf';
+		
+		force_download($name, $data);
 	}
 	
 	public function about()
