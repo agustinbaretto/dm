@@ -53,7 +53,8 @@
 				<p>I love my profession, I feel happy of being able to turn my ideas into reality with just 
 				some lines of code and though I sometimes do not enjoy programming, I always end up	getting my hands dirty (it's a kind of love-hate thing 
 				we have).</p>
-				<p>I am also an artist, I do oil painting and from time to time and play the guitar with some good old friends in this crazy band called "Rulos".</p>
+				<p>I am also an artist, I do oil painting and from time to time and I get on to stage to perform some Standup Comedy or to play the guitar 
+				with some good old friends in this crazy covers band called "Rulos".</p>
 				<p>I am open to any proposals for work, research and art projects so <a href="<?=site_url('personal/contact') ?>">contact me</a> if you have a tempting offer!</p>
 			</div><!-- /colg-lg-6 -->
 			
@@ -77,6 +78,20 @@
 				<div class="progress">
 					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
 						<span class="sr-only">80% Complete</span>
+					</div>
+				</div>
+				
+				Painting
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+						<span class="sr-only">60% Complete</span>
+					</div>
+				</div>
+				
+				Standup
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+						<span class="sr-only">30% Complete</span>
 					</div>
 				</div>
 				
