@@ -5,7 +5,7 @@ class Personal extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('templates/headerPersonal');
-		$this->load->view('pages/about');
+		$this->load->view('pages/me');
 		$this->load->view('templates/footer');
 	}
 	

@@ -46,8 +46,6 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="<?php echo site_url('personal') ?>">About Me</a></li>
-            <li><a href="<?php echo site_url('personal/works') ?>">My Works</a></li>
-            <li><a href="<?php echo site_url('personal/hobbies') ?>">Hobbies</a></li>
             <li><a href="<?php echo site_url('personal/blog') ?>">Blog</a></li>
             <li><a href="<?php echo site_url('personal/contact') ?>">Contact</a></li>
           </ul>

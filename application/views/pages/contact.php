@@ -5,7 +5,7 @@
 			<div class="col-lg-6 col-lg-offset-3 centered">
 				<h3>CONTACT ME</h3>
 				<hr>
-				<p>Feel free to contact me for any matter regarding this application or any other questions or comments.</p>
+				<p>Feel free to contact me for any matter regarding this site or any other questions or comments.</p>
 			</div>
 		</div>
 		<div class="row mt">	

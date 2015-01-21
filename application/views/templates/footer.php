@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
-					<h4>My Work</h4>
+					<h4>My Experience</h4>
 					<p><a href="http://www.linkedin.com/in/agustinbaretto/">See my LinkedIn profile</a><br/></p>
 				</div><!-- /col-lg-4 -->
 				

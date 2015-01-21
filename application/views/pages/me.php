@@ -2,10 +2,15 @@
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 centered">
-					<img src="assets/img/user.png" alt="Stanley">
-					<h1>About me</h1>
-					<p>My name is Agustin Baretto, I am a Computer Science Engineer and I am interested in Social Networks, Mobile Technologies and the Semantic Web. I have worked for many years in the Software Development Industry as a Developer, Business Analyst and Project Manager.</p>
-					<p>I am currently doing an MS in Technical Entrepreneurship and Management at <a href="http://www.rochester.edu">University of Rochester</a> and I am part of both Human Computer Interaction and Data Mining Research Teams.</p>
+					<div class="friend-photo">
+						<img src="<?=base_url();?>assets/img/me.jpg" alt="Gus">
+					</div>
+					<h1>About me...</h1>
+					<p>My name is Agustin Baretto, but you can call me Gus! I am a Computer Science Engineer and I am interested in Social Networks, Mobile 
+					Technologies and the Semantic Web. I have worked for many years in the IT Industry as a Developer, Business Analyst and Project Manager.</p>
+					<p>I am currently doing a Master of Science in <a href="http://www.rochester.edu/team/">Technical Entrepreneurship and Management</a> 
+					at <a href="http://www.rochester.edu">University of Rochester</a> and I am part of <a href="http://cs.rochester.edu/hci">Human-Computer Interaction</a> 
+					Research Team.</p>
 					
 				</div><!-- /col-lg-8 -->
 			</div><!-- /row -->
@@ -15,8 +20,8 @@
 	
 	<!-- +++++ Information Section +++++ -->
 	
-	<div class="container pt">
-		<div class="row mt centered">	
+	<div class="container">
+		<!-- div class="row mt centered">	
 			<div class="col-lg-3">
 				<span class="glyphicon glyphicon-book"></span>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -40,30 +45,45 @@
 		
 		<div class="row mt">
 			<div class="col-lg-6">
-				<h4>THE THINKING</h4>
-				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+				<h4>THERE'S NOT MUCH MORE TO SAY...</h4>
+				<p>...that you couldn't find by your own means on <a href="http://www.linkedin.com/in/agustinbaretto/">my LinkedIn profile</a>.</p>
+				<p>I am very active person, a Jack of the All Trades who likes to be involved in as many activities as possible. I have done many jobs before
+				working in IT	(dishwasher, sous chef, hostel concierge, life-drawing instructor, bilingual callcenter agent) and I had fun in all of them.
+				But none was so rewarding as being a tech geek.</p>
+				<p>I love my profession, I feel happy of being able to turn my ideas into reality with just 
+				some lines of code and though I sometimes do not enjoy programming, I always end up	getting my hands dirty (it's a kind of love-hate thing 
+				we have).</p>
+				<p>I am also an artist, I do oil painting and from time to time and play the guitar with some good old friends in this crazy band called "Rulos".</p>
+				<p>I am open to any proposals for work, research and art projects so <a href="<?=site_url('personal/contact') ?>">contact me</a> if you have a tempting offer!</p>
 			</div><!-- /colg-lg-6 -->
 			
 			<div class="col-lg-6">
-				<h4>THE SKILLS</h4>
-				Wordpress
+				<h4>MY SKILLS</h4>
+				Product Management & Business Analysis
 				<div class="progress">
-					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-						<span class="sr-only">60% Complete</span>
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+						<span class="sr-only">100% Complete</span>
 					</div>
 				</div>
 
-				Photoshop
+				Project Management (Agile, SCRUM)
 				<div class="progress">
-					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+						<span class="sr-only">90% Complete</span>
+					</div>
+				</div>
+				
+				Web Programming (PHP, Javascript, HTML5, CSS)
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
 						<span class="sr-only">80% Complete</span>
 					</div>
 				</div>
 				
-				HTML + CSS
+				Singing
 				<div class="progress">
-					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-						<span class="sr-only">95% Complete</span>
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+						<span class="sr-only">10% Complete</span>
 					</div>
 				</div>
 

@@ -41,11 +41,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo site_url('main') ?>">Gustame</a>
+          <a class="navbar-brand" href="<?=site_url('main') ?>">Gustame</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-         	 	<li><a href="<?php echo site_url('main/how') ?>">How does it work?</a></li>
+         	 	<li><a href="<?=site_url('main/how') ?>">How does it work?</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
