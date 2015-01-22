@@ -19,6 +19,36 @@ class Personal extends CI_Controller {
 	public function contact()
 	{
 		$this->load->view('templates/headerPersonal');
+		$this->load->view('pages/contact_me');
+		$this->load->view('templates/footer');
+	}
+	
+	public function submit_contact()
+	{
+		if(!($this->input->post('name')&&$this->input->post('email')&&$this->input->post('content'))){
+			$this->load->view('templates/header');
+			$this->load->view('pages/contact');
+			$this->load->view('templates/footer');
+		}else{
+				
+			$this->load->database();
+				
+			$data = array(
+					'name' => $this->input->post('name', TRUE),
+					'email' => $this->input->post('email', TRUE),
+					'content' => $this->input->post('content', TRUE)
+			);
+				
+			$this->db->insert('contact_form', $data);
+			$this->load->view('templates/headerPersonal');
+			$this->load->view('pages/contactSuccess');
+			$this->load->view('templates/footer');
+		}
+	}
+	
+	public function research()
+	{
+		$this->load->view('templates/headerPersonal');
 		$this->load->view('pages/contact');
 		$this->load->view('templates/footer');
 	}
