@@ -6,7 +6,7 @@
 						<img src="<?=base_url();?>assets/img/me.jpg" alt="Gus">
 					</div>
 					<h1>About me...</h1>
-					<p>My name is Agustin Baretto, but you can call me Gus! I am a Computer Science Engineer and I am interested in Social Networks, Mobile 
+					<p>My name is Agustin Baretto, but you can call me <b>Gus</b>! I am a Computer Science Engineer and I am interested in Social Networks, Mobile 
 					Technologies and the Semantic Web. I have worked for many years in the IT Industry as a Developer, Business Analyst and Project Manager.</p>
 					<p>I am currently doing a Master of Science in <a href="http://www.rochester.edu/team/" target="_blank">Technical Entrepreneurship and Management</a> 
 					at <a href="http://www.rochester.edu" target="_blank">University of Rochester</a> and I am part of <a href="http://cs.rochester.edu/hci" target="_blank">Human-Computer Interaction</a> 

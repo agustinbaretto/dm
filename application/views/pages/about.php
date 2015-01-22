@@ -4,8 +4,7 @@
 				<div class="col-lg-8 col-lg-offset-2 centered">
 					<span class="glyphicon glyphicon-bullhorn"></span>
 					<h1>About Gustame</h1>
-					<p>Gustame is an app I developed as a class project for the Data Mining course I took during the fall of 2014 at <a href="http://www.rochester.edu/">University of 
-					Rochester</a>.</p>
+					<p><a href="<?=site_url('main') ?>" target="_blank">Gustame</a> is an app I developed as a project for a Data Mining course I took during fall of 2014.</p>
 					<p>Christmas was coming and I wanted to give a book as a gift to a friend and so I faced the problem: what books would this friend like? 
 					I had learnt some stuff about recommendation systems so then, I decided to develop an app that could 
 					address this problem by making use of information available in social networks about friends interests.</p>
@@ -24,7 +23,8 @@
 				<h4>HOW DOES IT WORK</h4>
 				<p>By signing in to the site using their Facebook account, users are able to see a list of their friends and for each of those friends, 
 				get recommendations based on the Facebook Pages related to books they already liked. Sounds tricky huh? Then I should not mention that 
-				it uses <a href="https://www.freebase.com/">Freebase</a> to disambiguate redundant entities and that it uses a <a href="http://en.wikipedia.org/wiki/Collaborative_filtering">Collaborative Filtering</a> technique based on your 
+				it uses <a href="https://www.freebase.com/" target="_blank">Freebase</a> to disambiguate redundant entities and that it uses a 
+				<a href="http://en.wikipedia.org/wiki/Collaborative_filtering" target="_blank">Collaborative Filtering</a> technique based on your 
 				closed graph of contacts to do the recommendation… but I will give you an example so you can figure out how it works:</p>
 			</div>
 		</div><!-- /row -->

@@ -12,7 +12,7 @@
 					<p>-Your friend Albert has liked the Facebook the pages “The Hobbit - the book” and “Alice in Wonderland”, so we might assume he has read those two books.</p>
 					<p>-Your other friends Bob and Claire also liked those two pages and they also liked “The Narnia Chronicles Book”, which Albert hasn’t. This means they have similar taste to Albert and that they have read a book Albert might enjoy reading too.</p>
 					<p>-You get a recommendation to give Albert the book “Narnia Chronicles” as a gift.</p>
-					<p>However, I invite you to just go and try the app by yourself by clicking <a href="<?=site_url('main') ?>" target="_blank">here</a> ! Any suggestions are welcome ;)</p>
+					<p>However, I invite you to just go and try the app by yourself by clicking <a href="<?=site_url('main') ?>" target="_blank">here</a>! Any suggestions are welcome ;)</p>
 				</div>
 
 			</div><!-- /row -->
