@@ -49,7 +49,7 @@ class Personal extends CI_Controller {
 	public function research()
 	{
 		$this->load->view('templates/headerPersonal');
-		$this->load->view('pages/contact');
+		$this->load->view('pages/research');
 		$this->load->view('templates/footer');
 	}
 	
