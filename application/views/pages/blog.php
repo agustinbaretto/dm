@@ -1,4 +1,24 @@
 <!-- +++++ Posts Lists +++++ -->
+	<div id="white">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<p><img src="<?php echo base_url();?>assets/img/me.jpg" width="50px" height="50px"> <ba>Agustin Baretto</ba></p>
+					<p><bd>Wednesday, January 21, 2015</bd></p>
+					<h4>Getting Techie (Part I)</h4>
+					<p>As part of the TEAM program, students are encouraged to take up to three technical elective courses. This is a perfect complement to the core entrepreneurship management courses as it allows us to get in touch with the latest technologies available and focus on those specific areas that might be needed to develop our future startups. In my case, coming from a Computer Science background and being deeply interested in the creation of web and mobile apps, I decided to take Data Mining and Human Computer Interaction courses during the past semester. I can say today, that my decision could not have been more accurate. I learnt a lot from both courses and more important, I was able to put my knowledge into practice by working on small projects required by them. On top of that, after finishing the semester, I was asked by both professors to do research for each of the courses, so that means I will be able to further dive into the stuff I love and will have plenty of time to do it!</p>
+					<p>On this post, I am going to talk about Data Mining and will leave HCI for my next article. Data Mining is the extraction of interesting patterns within large sets of data by using several different techniques related to Artificial Intelligence, Statistics, Machine Learning and Database Systems. These patterns are then translated into useful information that can be easily understood by end users or clients. So for example, a supermarket might use DM in order to analyze its customers purchases and make smart decisions based on the results of the research. These might help to understand what different kinds of customers shop at the supermarket, what they seek, how much they spend on average, and what products they usually buy. It might also help to find correlations between products (like most of the customers that buy gin also buy tonic and lemons). Or even to predict whether putting a new product on a specific shelve would be a good decision or if it should be put somewhere else. There is known myth that says that Wal-Mart found years ago that many young american male bought diapers and beer, something not obvious at first sight and not expected to happen. You would expect customers buying diapers to also buy baby food for example, but not beer. After doing some analysis, researchers reached to the conclusion that these were young new fathers that were asked by their wives to go out buy some diapers and once they were at the shop took the chance to also get some beer!</p>
+					<p>There is plenty of bibliography about this fascinating discipline you can read so I will stop talking about Data Mining and tell you about the project I worked on during the end of the course. Christmas was coming and I wanted to give a book as a gift to a friend and so I faced the problem: what books would this friend like? Gustame is an app I developed to address this problem. By signing in to the site using their Facebook account, users are able to see a list of their friends and for each of those friends, get recommendations based on the Facebook Pages related to books they already liked. Sounds tricky huh? Then I should not mention that it uses an open knowledge database (Freebase) to disambiguate redundant entities and that it uses a Slope One algorithm based on your closed graph of contacts to do the recommendation… but I will give you an example so you can figure out how it works:</p>
+					<p>Your friend Albert has liked the Facebook the pages “The Hobbit - the book” and “Alice in Wonderland”, so we might assume he has read those two books.</p>
+					<p>Your other friends Bob and Claire also liked those two pages and they also liked “The Narnia Chronicles Book”, which Albert hasn’t. This means they have similar taste to Albert and that they have read a book Albert might enjoy reading too.</p>
+					<p>You get a recommendation to give Albert the book “Narnia Chronicles” as a gift.</p>
+					<p>However, I invite you to just go and try the app by yourself by clicking <a href="<?=site_url('main') ?>">here</a> ! Any suggestions are welcome ;)</p>
+				</div>
+
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div>
+	
 	<!-- +++++ First Post +++++ -->
 	<div id="grey">
 	    <div class="container">
