@@ -29,7 +29,7 @@
 		      	<ul class="list-group">
 							<?php foreach ($books as $name => $ranking): ?>
 							  <li class="list-group-item">
-							    <span class="badge"><?=$ranking?></span>
+							    <!-- class="badge"><?=$ranking?></span-->
 							    <?=$name?>
 							  </li>
 							<?php endforeach; ?>
