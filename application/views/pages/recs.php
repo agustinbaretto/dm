@@ -49,7 +49,7 @@
       		<ul class="panel-body">
 						<?php foreach ($movies as $name => $ranking): ?>
 						  <li class="list-group-item">
-						    <span class="badge"><?=$ranking?></span>
+						    <!--span class="badge"><?=$ranking?></span-->
 						    <?=$name?>
 						  </li>
 						<?php endforeach; ?>
