@@ -3,6 +3,10 @@
 application/cache/*
 !application/cache/index.html
 !application/cache/.htaccess
+<<<<<<< HEAD
+=======
+a
+>>>>>>> 6824c4c94bc02dcc34c4cdaa3436597b02bcde8c
 application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
