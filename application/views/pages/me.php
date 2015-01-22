@@ -87,14 +87,7 @@
 						<span class="sr-only">60% Complete</span>
 					</div>
 				</div>
-				
-				Standup
-				<div class="progress">
-					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
-						<span class="sr-only">30% Complete</span>
-					</div>
-				</div>
-				
+
 				Singing
 				<div class="progress">
 					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
