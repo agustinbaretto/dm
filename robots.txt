@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /dm/data
-Disallow: /dm/system
-Disallow: /dm/vendor
