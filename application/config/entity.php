@@ -18,3 +18,5 @@ $config['director']['freebase_properties'] = 'name';
 
 $config['author']['freebase_type'] = '/book/author';
 $config['author']['freebase_properties'] = 'name';
+
+$config['credentials']['google'] = 'AIzaSyBDxbGHi_I78CnY7rjoec5LfqMTNwueiKM';

@@ -16,7 +16,7 @@ class Matcher extends CI_Controller
 		}
 		
 		$client = new Google_Client();
-		$client->setDeveloperKey("AIzaSyBDxbGHi_I78CnY7rjoec5LfqMTNwueiKM");
+		$client->setDeveloperKey($this->config->item("credentials", "google"));
 		$this->freebase = new Google_Service_Freebase($client);
 	}
 	
