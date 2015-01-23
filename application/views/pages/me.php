@@ -47,7 +47,7 @@
 			<div class="col-lg-6">
 				<h4>THERE'S NOT MUCH MORE TO SAY...</h4>
 				<p>...that you couldn't find by your own means on <a href="http://www.linkedin.com/in/agustinbaretto/">my LinkedIn profile</a>.</p>
-				<p>I am very active person, a Jack of the All Trades who likes to be involved in as many activities as possible. I have done many jobs before
+				<p>I am very active person, a Jack-of-All-Trades who likes to be involved in as many activities as possible. I have done many jobs before
 				working in IT	(dishwasher, sous chef, hostel concierge, life-drawing instructor, bilingual callcenter agent) and I had fun in all of them.
 				But none was so rewarding as being a tech geek.</p>
 				<p>I love my profession, I feel happy of being able to turn my ideas into reality with just 
