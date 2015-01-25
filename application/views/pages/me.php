@@ -50,12 +50,12 @@
 				<p>I am very active person, a Jack-of-All-Trades who likes to be involved in as many activities as possible. I have done many jobs before
 				working in IT	(dishwasher, sous chef, hostel concierge, life-drawing instructor, bilingual callcenter agent) and I had fun in all of them.
 				But none was so rewarding as being a tech geek.</p>
-				<p>I love my profession, I feel happy of being able to turn my ideas into reality with just 
+				<p>I love my profession, I feel happy for being able to turn my ideas into reality with just 
 				some lines of code and though I sometimes do not enjoy programming, I always end up	getting my hands dirty (it's a kind of love-hate thing 
 				we have).</p>
-				<p>I am also an artist, I do oil painting and from time to time and I get on to stage to perform some Standup Comedy or to play the guitar 
-				with some good old friends in this crazy covers band called "Rulos".</p>
-				<p>I am open to any proposals for work, research and art projects so <a href="<?=site_url('personal/contact') ?>">contact me</a> if you have a tempting offer!</p>
+				<p>I am also an artist, I do oil painting and from time to time I get on stage to perform some Standup Comedy or to play the guitar 
+				in a crazy covers band called "Rulos".</p>
+				<p>I am open to any proposals related to work, research or art... so <a href="<?=site_url('personal/contact') ?>">contact me</a> if you have a tempting offer!</p>
 			</div><!-- /colg-lg-6 -->
 			
 			<div class="col-lg-6">
