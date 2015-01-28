@@ -43,7 +43,7 @@ COMMING SOON PAGE
             seconds.html('<h1>'+s+'</h1><p>Second'+(s>1?'s':''),'</p>');
             setTimeout(setDate, 1000);
 
-            message.html("A PICTURE IS WORTH A THOUSAND WORDS... NOW MULTIPLY THAT BY YOUR FOLLOWERS NUMBER.");
+            message.html("A PICTURE IS WORTH A THOUSAND WORDS... NOW MULTIPLY THAT BY YOUR NUMBER OF FOLLOWERS.");
         }
     }
 })(jQuery);

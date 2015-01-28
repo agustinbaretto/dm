@@ -48,10 +48,10 @@
             <!-- END TIMER -->
             <div class="col-lg-4 col-lg-offset-4 mt centered">
             	<h4>LET ME KNOW WHEN YOU LAUNCH</h4>
-				<form class="form-inline" role="form">
+				<form class="form-inline" role="form" action="<?= site_url('main/contactme') ?>">
 				  <div class="form-group">
-				    <label class="sr-only" for="exampleInputEmail2">Email address</label>
-				    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+				    <label class="sr-only" for="email">Email address</label>
+				    <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
 				  </div>
 				  <button type="submit" class="btn btn-info">Submit</button>
 				</form>            
