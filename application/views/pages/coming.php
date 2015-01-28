@@ -48,7 +48,7 @@
             <!-- END TIMER -->
             <div class="col-lg-4 col-lg-offset-4 mt centered">
             	<h4>LET ME KNOW WHEN YOU LAUNCH</h4>
-				<form class="form-inline" role="form" action="<?= site_url('main/contactme') ?>">
+				<form class="form-inline" role="form" method="post" accept-charset="utf-8" action="<?=site_url('main/contactme')?>">
 				  <div class="form-group">
 				    <label class="sr-only" for="email">Email address</label>
 				    <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
