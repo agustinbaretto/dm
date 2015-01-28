@@ -2,8 +2,8 @@
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 centered">
-					<div class="friend-photo">
-						<img src="<?=base_url();?>assets/img/me.jpg" alt="Gus">
+					<div class="">
+						<img src="<?=base_url();?>assets/img/me2.jpg" alt="Gus">
 					</div>
 					<h1>About me...</h1>
 					<p>My name is Agustin Baretto, but you can call me <b>Gus</b>! I am a Computer Science Engineer and I am interested in Social Networks, Mobile 

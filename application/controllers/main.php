@@ -5,9 +5,10 @@ class Main extends CI_Controller {
 	public function index()
 	{
 		$data = array("login_url" => $this->facebook->get_login_url());
-		$this->load->view('templates/headerLanding');
-		$this->load->view('pages/landing', $data);
-		$this->load->view('templates/footerLanding');
+		//$this->load->view('templates/headerLanding');
+		//$this->load->view('pages/landing', $data);
+		//$this->load->view('templates/footerLanding');
+		$this->load->view('pages/coming');
 	}
 	
 	public function logout()
@@ -69,6 +70,19 @@ class Main extends CI_Controller {
 			$this->load->view('templates/header');
 			$this->load->view('pages/contactSuccess');
 			$this->load->view('templates/footer');
+		}
+	}
+	
+	public function contactme()
+	{
+		if(($this->input->post('email'))){				
+			$this->load->database();
+			$data = array(
+					'email' => $this->input->post('email', TRUE),
+			);
+				
+			$this->db->insert('launch_form', $data);
+			$this->load->view('pages/coming');
 		}
 	}
 }
