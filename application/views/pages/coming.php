@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="<?php echo base_url();?>assets/ico/favicon.png">
 
-    <title>Counter - Coming Soon Theme</title>
+    <title>GUSTAME - Get Useful Target Metrics!</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url();?>assets/css/bootstrap.css" rel="stylesheet">
