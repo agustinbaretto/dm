@@ -3,7 +3,7 @@
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 centered">
-					<div class="friend-photo">
+					<div class="friend-photo" style="margin-top: 20px;">
 						<img src="https://graph.facebook.com/<?=$ownerId?>/picture?width=150&height=150"/>
 					</div>
 				</div><!-- /col-lg-8 -->

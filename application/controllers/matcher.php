@@ -18,6 +18,7 @@ class Matcher extends CI_Controller
 		$client = new Google_Client();
 		$client->setDeveloperKey($this->config->item("credentials", "google"));
 		$this->freebase = new Google_Service_Freebase($client);
+		$this->gBooks = new Google_Service_Books($client);
 	}
 	
 	public function friends()
@@ -175,9 +176,7 @@ class Matcher extends CI_Controller
     					//check to see the person has not liked same entity twice
     					if ($friend->id != end($entityList[$freebaseName]["fans"])){
     						array_push($entityList[$freebaseName]["fans"], $friend->id);
-    						foreach ($entityList[$freebaseName]["fans"] as $otherFan){
-    							//array_push($fan_fan, array("from"=>$friend->id, "to"=>$otherFan));
-    						}
+
     						//store relationship
    							//array_push($fan_ent, array("from"=>$friend->id, "to"=>$entityList[$freebaseName]["mid"]));
    							$preferences[$friend->id][$freebaseName] = (strpos($entityList[$freebaseName]["mid"], "m"))?5.0:1.0;
@@ -186,9 +185,7 @@ class Matcher extends CI_Controller
     					//create entity
     					$entityList[$freebaseName]["fans"] = array($friend->id);
     					$entityList[$freebaseName]["mid"] = $freebaseMid;
-							if(!strpos($entityList[$freebaseName]["mid"], "m")){
-								$not++;
-							}
+
     					//store relationship
     					//array_push($nodes, array("id"=>$freebaseMid, "label"=>$freebaseName, "group"=>$entityType));
     					//array_push($fan_ent, array("from"=>$friend->id, "to"=>$freebaseMid));
