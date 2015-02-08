@@ -48,8 +48,9 @@ class Matcher extends CI_Controller
 		if(array_key_exists($userId, $bookGraph)){
 			$books = $re->getRecommendations($bookGraph, $userId);
 			foreach ($books as $title=>$rank){
-				$res = $this->gBooks->volumes->listVolumes("Rayuela",array("maxResults"=>3));
+				$res = $this->gBooks->volumes->listVolumes("Rayuela",array("maxResults"=>1));
 				vd::dump($res->getItems());
+				vd::dump($res->next()->getVolumeInfo());
 				die;
 			}vd::dump($books);die;
 		}
