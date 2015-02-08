@@ -53,10 +53,10 @@ class Matcher extends CI_Controller
 				if($ranking > 0.95){
 					$res = $this->cache->memcached->get(md5(serialize("book".$title)));
 					if ($response == FALSE){
-						$res = $this->gBooks->volumes->listVolumes($title,array("maxResults"=>1));
+						$res = $this->gBooks->volumes->listVolumes($title,array("maxResults"=>1))->current()->getVolumeInfo();
 						$this->cache->memcached->save(md5(serialize("book".$title)), $res, 0);
 					}
-					$books1[$title] = $res->current()->getVolumeInfo();
+					$books1[$title] = $res;
 				}else{
 					break;
 				}
