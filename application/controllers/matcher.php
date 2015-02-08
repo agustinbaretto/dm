@@ -40,17 +40,19 @@ class Matcher extends CI_Controller
 	
 	public function friend($userId)
 	{
-		$books = array();
+		$books0 = array();
+		$books1 = array();
 		$movies = array();
 		$bookGraph = $this->colaborative("books");
 		//$movieGraph = $this->colaborative("movies");
 		$re = new Recommend();
 		if(array_key_exists($userId, $bookGraph)){
-			$books = $re->getRecommendations($bookGraph, $userId);
-			foreach ($books as $title=>$info){
+			$books0 = $re->getRecommendations($bookGraph, $userId);
+			
+			foreach ($books0 as $title=>$info){
 				$res = $this->gBooks->volumes->listVolumes($title,array("maxResults"=>1));
-				$books[$title]["info"] = $res->current()->getVolumeInfo();
-			}vd::dump($books);die;
+				$books1[$title] = $res->current()->getVolumeInfo();
+			}vd::dump($books1);die;
 		}
 		//if(array_key_exists($userId, $movieGraph)){
 		//	$movies = $re->getRecommendations($movieGraph, $userId);
