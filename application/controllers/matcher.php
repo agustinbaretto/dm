@@ -49,7 +49,7 @@ class Matcher extends CI_Controller
 			$books = $re->getRecommendations($bookGraph, $userId);
 			foreach ($books as $title=>$info){
 				$res = $this->gBooks->volumes->listVolumes($title,array("maxResults"=>1));
-				$books[$title] = $res->current()->getVolumeInfo();
+				$books[$title]["info"] = $res->current()->getVolumeInfo();
 			}vd::dump($books);die;
 		}
 		//if(array_key_exists($userId, $movieGraph)){
