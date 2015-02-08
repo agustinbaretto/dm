@@ -27,6 +27,11 @@
 		    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 		      <div class="panel-body">
 		      	<ul class="list-group">
+		      		<?php if (count($books) == 0): ?>
+		      			<li class="list-group-item">
+							    Shucks! Looks like this user needs to start liking more stuff on Facebook before we can make any recommendations...
+							  </li>
+		      		<?php endif; ?>
 							<?php foreach ($books as $name => $info): ?>
 							  <li class="list-group-item">
 							    <a href="<?=$info->infoLink?>" target="_blank"><?=$name?></a>
