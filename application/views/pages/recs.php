@@ -27,9 +27,8 @@
 		    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 		      <div class="panel-body">
 		      	<ul class="list-group">
-							<?php foreach ($books as $name => $ranking): ?>
+							<?php foreach ($books as $name => $info): ?>
 							  <li class="list-group-item">
-							    <!-- class="badge"><?=$ranking?></span-->
 							    <?=$name?>
 							  </li>
 							<?php endforeach; ?>
