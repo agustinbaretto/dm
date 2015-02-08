@@ -50,9 +50,9 @@ class Matcher extends CI_Controller
 			$books0 = $re->getRecommendations($bookGraph, $userId);
 
 			foreach ($books0 as $title=>$ranking){
-				if($ranking > 0.95){
+				if(($ranking > 0.95 && count($books1) <= 50)||(count($books1) <= 3)){
 					$res = $this->cache->memcached->get(md5(serialize("book".$title)));
-					if ($response == FALSE){
+					if ($res == FALSE){
 						$res = $this->gBooks->volumes->listVolumes($title,array("maxResults"=>1))->current()->getVolumeInfo();
 						$this->cache->memcached->save(md5(serialize("book".$title)), $res, 0);
 					}
