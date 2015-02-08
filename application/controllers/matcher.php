@@ -50,7 +50,7 @@ class Matcher extends CI_Controller
 			foreach ($books as $title=>$rank){
 				$res = $this->gBooks->volumes->listVolumes("Rayuela",array("maxResults"=>1));
 				vd::dump($res->getItems());
-				vd::dump($res->next()->getVolumeInfo());
+				vd::dump($res->current()->getVolumeInfo());
 				die;
 			}vd::dump($books);die;
 		}
