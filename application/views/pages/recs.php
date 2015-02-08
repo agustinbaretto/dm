@@ -29,13 +29,10 @@
 		      	<ul class="list-group">
 							<?php foreach ($books as $name => $info): ?>
 							  <li class="list-group-item">
-							    <a href="<?=$$info["infoLink"]?>" target="_blank"><?=$name?></a>
+							    <a href="<?=$info->infoLink?>" target="_blank"><?=$name?></a>
 							  </li>
 							  <li class="list-group-item">
-							    <?=$info->description?>
-							  </li>
-							  <li class="list-group-item">
-							    <?=$description?>
+							    <img src="<?=$info->getImageLinks->smallThumbnail?>" /><?=$info->description?>
 							  </li>
 							<?php endforeach; ?>
 						</ul>
