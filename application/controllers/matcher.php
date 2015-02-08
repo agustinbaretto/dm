@@ -47,6 +47,7 @@ class Matcher extends CI_Controller
 		$re = new Recommend();
 		if(array_key_exists($userId, $bookGraph)){
 			$books = $re->getRecommendations($bookGraph, $userId);
+			print_r($books);die;
 			foreach ($books as $book){
 				print_r($book);
 			}die;
