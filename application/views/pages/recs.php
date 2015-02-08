@@ -37,7 +37,7 @@
 							    <a href="<?=$info->infoLink?>" target="_blank"><?=$name?></a>
 							  </li>
 							  <li class="list-group-item">
-							    <?=$info->description?>
+							    <?= $info->description ?>
 							  </li>
 							<?php endforeach; ?>
 						</ul>
