@@ -53,15 +53,16 @@ class Matcher extends CI_Controller
 				if($ranking > 0.95){
 					$res = $this->gBooks->volumes->listVolumes($title,array("maxResults"=>1));
 					$books1[$title] = $res->current()->getVolumeInfo();
+					vd::dump($res->current()->getVolumeInfo()->getImageLinks());
 				}else{
 					break;
 				}
-			}vd::dump($books1);die;
+			}
 		}
 		//if(array_key_exists($userId, $movieGraph)){
 		//	$movies = $re->getRecommendations($movieGraph, $userId);
 		//}
-		$data = array("books"=>$books, "movies"=>$movies, "ownerId"=>$userId);
+		$data = array("books"=>$books1, "movies"=>$movies, "ownerId"=>$userId);
 		$this->load->view('templates/header');
 		$this->load->view('pages/recs', $data);
 		$this->load->view('templates/footer');
