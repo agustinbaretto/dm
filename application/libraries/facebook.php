@@ -8,7 +8,7 @@ if ( session_status() == PHP_SESSION_NONE ) {
 }
  
 // Autoload the required files
-require_once('vendor/autoload.php' );
+require_once('vendor/autoload.php');
  
 use Facebook\FacebookRedirectLoginHelper;
 use Facebook\FacebookSession;
