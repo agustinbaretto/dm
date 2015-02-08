@@ -51,9 +51,12 @@ class Matcher extends CI_Controller
 
 			foreach ($books0 as $title=>$ranking){
 				if($ranking > 0.95){
-					$res = $this->gBooks->volumes->listVolumes($title,array("maxResults"=>1));
+					$res = $this->cache->memcached->get(md5(serialize("book".$title)));
+					if ($response == FALSE){
+						$res = $this->gBooks->volumes->listVolumes($title,array("maxResults"=>1));
+						$this->cache->memcached->save(md5(serialize("book".$title)), $res, 0);
+					}
 					$books1[$title] = $res->current()->getVolumeInfo();
-					//vd::dump($res->current()->getVolumeInfo()->getImageLinks());
 				}else{
 					break;
 				}
