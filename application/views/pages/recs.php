@@ -32,7 +32,7 @@
 							    <a href="<?=$info->infoLink?>" target="_blank"><?=$name?></a>
 							  </li>
 							  <li class="list-group-item">
-							    <img src="<?=$info->getImageLinks()->smallThumbnail?>" /><?=$info->description?>
+							    <img src="<?=$info->getImageLinks()->getSmallThumbnail()?>" /><?=$info->description?>
 							  </li>
 							<?php endforeach; ?>
 						</ul>
