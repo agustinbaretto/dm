@@ -56,12 +56,12 @@ class Matcher extends CI_Controller
 				}else{
 					break;
 				}
-			}
+			}vd::dump($books1);die;
 		}
 		//if(array_key_exists($userId, $movieGraph)){
 		//	$movies = $re->getRecommendations($movieGraph, $userId);
 		//}
-		$data = array("books"=>$books1, "movies"=>$movies, "ownerId"=>$userId);
+		$data = array("books"=>$books, "movies"=>$movies, "ownerId"=>$userId);
 		$this->load->view('templates/header');
 		$this->load->view('pages/recs', $data);
 		$this->load->view('templates/footer');
