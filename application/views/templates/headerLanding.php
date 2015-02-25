@@ -20,6 +20,7 @@
     <link href="<?php echo base_url();?>assets/css/main.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="<?php echo base_url();?>assets/js/bootstrap-waitingfor.js"></script>
     <script src="<?php echo base_url();?>assets/js/hover.zoom.js"></script>
     <script src="<?php echo base_url();?>assets/js/hover.zoom.conf.js"></script>
 

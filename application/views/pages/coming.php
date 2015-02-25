@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="<?php echo base_url();?>assets/ico/favicon.png">
 
-    <title>GUSTAME - Get Useful Target Metrics!</title>
+    <title>DEMOGRAFIES - Get Useful Target Metrics!</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url();?>assets/css/bootstrap.css" rel="stylesheet">
@@ -35,7 +35,7 @@
         <div class="container">
             <header>
                 <!-- HEADLINE -->
-                <h1 data-animated="GoIn"><b>GUSTAME</b> is coming soon...</h1>
+                <h1 data-animated="GoIn"><b>DEMOGRAFIES</b> is coming soon...</h1>
             </header>
             <!-- START TIMER -->
             <div id="timer" data-animated="FadeIn">

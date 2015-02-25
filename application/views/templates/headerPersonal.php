@@ -45,7 +45,7 @@
 
     <!-- Static navbar -->
     <div class="navbar navbar-inverse navbar-static-top navbar-landing">
-      <div class="container">
+      <div class="container mt">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
@@ -58,6 +58,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="<?php echo site_url('personal') ?>">About Me</a></li>
             <li><a href="<?php echo site_url('personal/research') ?>">Research</a></li>
+            <li><a href="<?php echo site_url('personal/byna') ?>">ByNA Project</a></li>
+            <li><a target="_blank" href="www.demografies.com">Demografies</a></li>
             <li><a href="<?php echo site_url('personal/gustame') ?>">Gustame</a></li>
             <li><a href="<?php echo site_url('personal/blog') ?>">Blog</a></li>
             <li><a href="<?php echo site_url('personal/contact') ?>">Contact</a></li>

@@ -16,6 +16,13 @@ class Personal extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 	
+	public function byna()
+	{
+		$this->load->view('templates/headerPersonal');
+		$this->load->view('pages/byna');
+		$this->load->view('templates/footer');
+	}
+	
 	public function contact()
 	{
 		$this->load->view('templates/headerPersonal');
