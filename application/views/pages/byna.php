@@ -6,9 +6,10 @@
 				<h3>ByNA Project</h3>
 				<hr>
 				<p><a href="http://www.facebook.com/bynaProject" target="_blank">ByNA Project</a> is a photography project I began with my girlfriend some
-				 time ago when I came to Rochester to do my MS. Buenos y Nuevos Aires (something like "Beautiful and New Winds") is our way to communicate every day, a shared 
-				 commitment to share everyday those little things that make us happy. ByNA is is like a children's play where BA (Buenos Aires)
-				  and NY (New York), the two places where we live, intercalate each other like on a puzzle or a game where every player must make a move and wait...</p>
+				 time ago when I came to Rochester to do my MS. <b>Buenos y Nuevos Aires</b> (something like <i>Beautiful and New Winds</i>) is our way to 
+				 communicate every day, a commitment to share everyday those little things that make us happy. <b>ByNA</b> is is like a children's play where 
+				 BA (Buenos Aires) and NY (New York), the two places where we live, intercalate each other like on a puzzle or a game where every player must 
+				 make a move and wait...</p>
 			</div>
 		</div>
 		<div class="row centered">	
