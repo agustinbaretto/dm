@@ -1,5 +1,5 @@
 <div id="ww">
-	    <div class="container mt">
+	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 centered">
 					<span class="glyphicon glyphicon-bullhorn"></span>

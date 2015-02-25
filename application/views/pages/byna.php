@@ -5,7 +5,7 @@
 			<div class="col-lg-6 col-lg-offset-3 centered">
 				<h3>ByNA Project</h3>
 				<hr>
-				<p><a href="http://www.facebook.com/byna" target="_blank">ByNA Project</a> is a photography project I began with my girlfriend some
+				<p><a href="http://www.facebook.com/bynaProject" target="_blank">ByNA Project</a> is a photography project I began with my girlfriend some
 				 time ago when I came to do my MS to Rochester. ByNA is a word play from mixing BA (Buenos Aires) and NY (New York), the two places
 				 where we live. Buenos y Nuevos Aires (something like "Beautiful and New Winds") is our way to communicate every day, a shared 
 				 commitment to share everyday those little things that makes us happy. BYNA is like a children's play, a mix of daily buzz where BA

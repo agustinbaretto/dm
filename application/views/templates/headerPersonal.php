@@ -59,7 +59,7 @@
             <li><a href="<?php echo site_url('personal') ?>">About Me</a></li>
             <li><a href="<?php echo site_url('personal/research') ?>">Research</a></li>
             <li><a href="<?php echo site_url('personal/byna') ?>">ByNA Project</a></li>
-            <li><a target="_blank" href="www.demografies.com">Demografies</a></li>
+            <li><a target="_blank" href="http://www.demografies.com">Demografies</a></li>
             <li><a href="<?php echo site_url('personal/gustame') ?>">Gustame</a></li>
             <li><a href="<?php echo site_url('personal/blog') ?>">Blog</a></li>
             <li><a href="<?php echo site_url('personal/contact') ?>">Contact</a></li>
