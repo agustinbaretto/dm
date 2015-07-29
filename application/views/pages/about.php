@@ -2,13 +2,14 @@
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 centered">
+				    <br />
 					<span class="glyphicon glyphicon-bullhorn"></span>
 					<h1>About Gustame</h1>
-					<p><a href="<?=site_url('main') ?>" target="_blank">Gustame</a> is an app I developed as a project for a Data Mining course I took during fall of 2014.</p>
+					<p>Gustame is a Data Mining app I developed during fall of 2014.</p>
 					<p>Christmas was coming and I wanted to give a book as a gift to a friend and so I faced the problem: what books would this friend like? 
 					I had learnt some stuff about recommendation systems so then, I decided to develop an app that could 
 					address this problem by making use of information available in social networks about friends interests.</p>
-					
+					<div class="alert alert-info" role="alert"><strong>Update: </strong>Unfortunately and due to <a target="_blank" href="http://techcrunch.com/2015/04/28/facebook-api-shut-down/#.sducqw:YnGX">changes in Facebook API</a>, Gustame app is no longer available.</div>
 				</div><!-- /col-lg-8 -->
 			</div><!-- /row -->
 	    </div> <!-- /container -->

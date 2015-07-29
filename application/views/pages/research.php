@@ -5,7 +5,7 @@
 			<div class="col-lg-6 col-lg-offset-3 centered">
 				<h3>RESEARCH</h3>
 				<hr>
-				<p>I am currently part of the <a href="http://cs.rochester.edu/hci" target="_blank">Human-Computer Interaction</a> Research Team at 
+				<p>I am part of the <a href="http://cs.rochester.edu/hci" target="_blank">Human-Computer Interaction</a> Research Team at 
 				<a href="http://www.rochester.edu/">University of Rochester</a>. I have been working on many things like face recognition, voice 
 				recognition, prototyping techniques, ubiquitous computing to name some.</p>
 			</div>
