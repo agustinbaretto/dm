@@ -56,7 +56,7 @@
 				<p>Here you can download the complete research I made and get a more precise understanding about how this marvelous app works. You can
 				also see on the right the slides I usually show when trying to explain my work (my script is missing of course but you can sort of guess it!).</p>
 				<div class="centered">
-					<a href="<?=site_url('main/download') ?>">
+					<a href="<?=site_url('main/download/gustame.pdf') ?>">
 						<img style="width:100px;" src="<?php echo base_url();?>assets/img/pdf-icon.png" alt=""><br/>
 						Click to Download!
 					</a>

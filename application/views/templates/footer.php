@@ -5,8 +5,11 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<h4>Some Links</h4>
-					<p><a href="<?=site_url('personal') ?>" target="_blank">See my Website</a><br/></p>
-					<p><a href="http://www.linkedin.com/in/agustinbaretto/" target="_blank">See my LinkedIn profile</a><br/></p>
+					<p>
+    					<a href="<?=site_url('personal') ?>" target="_blank">See my Website</a><br/>
+    					<a href="https://twitter.com/naranjamecanica" target="_blank">Follow me on Twitter!</a><br/>
+    					<a href="http://www.linkedin.com/in/agustinbaretto/" target="_blank">See my LinkedIn profile</a><br/>
+    				</p>
 				</div><!-- /col-lg-4 -->
 				
 				<div class="col-lg-4">
@@ -21,7 +24,7 @@
 				
 				<div class="col-lg-4">
 					<h4>About me</h4>
-					<p>I am a Computer Science Engineer who feels passion for social networks, entrepreneuship and marketing.</p>
+					<p>I am a Computer Science Engineer who feels passion for Social Networks, Entrepreneuship and Research.</p>
 				</div><!-- /col-lg-4 -->
 			
 			</div>

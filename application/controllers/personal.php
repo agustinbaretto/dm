@@ -60,6 +60,13 @@ class Personal extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 	
+	public function news()
+	{
+	    $this->load->view('templates/headerPersonal');
+	    $this->load->view('pages/news');
+	    $this->load->view('templates/footer');
+	}
+	
 	public function gustame()
 	{
 		$this->load->view('templates/headerPersonal');
