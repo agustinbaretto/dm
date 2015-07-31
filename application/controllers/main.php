@@ -4,10 +4,13 @@ class Main extends CI_Controller {
 	
 	public function index()
 	{
-		$data = array("login_url" => $this->facebook->get_login_url());
-		$this->load->view('templates/headerLanding');
-		$this->load->view('pages/landing', $data);
-		$this->load->view('templates/footerLanding');
+	    $this->load->view('templates/headerPersonal');
+	    $this->load->view('pages/me');
+	    $this->load->view('templates/footer');
+		//$data = array("login_url" => $this->facebook->get_login_url());
+		//$this->load->view('templates/headerLanding');
+		//$this->load->view('pages/landing', $data);
+		//$this->load->view('templates/footerLanding');
 		//$this->load->view('pages/coming');
 	}
 	
